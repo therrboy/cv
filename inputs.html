@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Probando MDN</title>
+</head>
+<body>
+    <form class="" action="index.html" method="post">
+        <label>MDN de pruebas:</label> <!-- Cuadro de texto para escribir el nombre -->
+        <input class="" type="text" name="" value=""> <!-- Cuadro de texto para escribir -->
+        <input class="favorite styled" type="button" value="Add to favorites"> <!-- Cuadro de texto para escribir el nombre del boton -->
+    </form>
+    <form class="" action="index.html" method="post">
+        <label for="scales">Cuadro con tilde</label>
+        <input class="" type="checkbox" id="scales" name="scales" checked> <!-- Cuadro para checkear con tilde -->
+    </form>
+    <form>
+        <label for="head">Color</label>
+        <input type="color" id="head" name="head" value="#e66465"> <!-- Cuadro para checkear color -->
+    </form>
+    <form>
+        <label for="start">Start Date</label>
+        <input type="date" id="start" name="trip-start" value="" min="1990-01-01" max="2050-12-31"> <!-- Cuadro para fechas, si no doy valor queda en blanco -->
+    </form>
+    <form>
+        <label for="meeting-time">Date time local, elige una fecha</label>
+        <input type="datetime-local" id="meeting-time" name="meeting-time" value="" min="1990-01-01T00:00"
+               max="2050-01-01T00:00"> <!-- Cuadro para checkear color -->
+    </form>
+    <form>
+        <label for="email">Ingresa tu email</label>
+        <input type="email" id="email" pattern=".+@hotmail\.com" size="30" placeholder="sophie@example.com" required> <!-- Mail -->
+    </form>
+    <form>
+        <label for="avatar">File</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"> <!-- Cuadro para cargar una imagen, pero no la muestra -->
+    </form>
+    <form>
+        <label for="userId">User ID</label> <!-- Cuadro para escribir y hacer un logo-boton -->
+        <input type="text" id="userId" name="userId">
+    </form>
+    <form>
+        <input type="image" id="image" alt="Login" src="login.png"> <!-- Boton usable que va con el de arriba-->
+    </form>
+    <form>
+        <label for="numeros">Numeros a elegir</label> <!-- Numeros -->
+        <input type="number" id="numeros" name="numeros" min="10" max="100"> <!-- podemos elegir max y min con rueda de aumento o disminucion -->
+    </form>
+    <form>
+        <label for="username">Username</label> <!--  -->
+        <input type="text" id="username" name="username">
+    </form>
+    <form>
+        <label for="pass">Password (8 caracteres min)</label> <!--  -->
+        <input type="password" id="pass" name="password" minlength="8" required>
+    </form>
+    <form>
+        <input type="submit" value="Sign in"> <!--  -->
+    </form>
+     <fieldset>
+         <legend>Select a maintenance drone:</legend> <!-- Caja con opciones -->
+                <input type="radio" id="huey" name="drone" value="huey" checked>
+                <label for="huey">Huey</label><br> <!-- Hay que usar el salto de linea para acomodarlo -->
+
+                <input type="radio" id="dewey" name="drone" value="dewey" checked>
+                <label for="dewey">Dewey</label><br> <!-- Si no se hace de esta forma no anda el check   -->
+
+                <input type="radio" id="louie" name="drone" value="louie" checked>
+                <label for="louie">Louie</label>
+     </fieldset>
+    <form>
+        <input type="range" id="volume" name="volume" min="0" max="11" value="2"> <!-- Volumen -->
+        <label for="volume">Volume</label>
+    </form>
+    <form>
+        <input type="range" id="cowbell" name="cowell" min="0" max="100" value="90" step="10"> <!-- Otro volumen -->
+        <label for="cowbell">Cowbell</label>
+    </form>
+    <form class="controls"> <!-- Ingresar datos en cuadro, resetea el cuadrito y envia informacion -->
+        <label for="id">User ID:</label>
+        <input type="text" id="id" name="id">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+    <form>
+        <label for="site-search">Search the site:</label> <!-- Cuadro buscador -->
+        <input type="search" id="site-search" name="q">
+    </form>
+    <form>
+        <label for="phone">Enter your phone number</label> <!-- Ingresar numero con ejemplo y especifico -->
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" required>
+        <small>Format: 221-5461937</small>
+    </form>
+    <form>
+        <label for="appt">Choose a time for your meeting:</label> <!-- Programar reunion -->
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+        <small>Office hours are 9am to 6pm</small>
+    </form>
+    <form>
+        <label for="url">Enter an Http Url:</label> <!-- Pide url -->
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+    </form>
+    <form>
+        <label for="week">Choose a week</label> <!-- Elegir semana -->
+        <input type="week" name="week" id="week" min="2000-W18" max="2022-W52" required>
+    </form>
+</body>
+</html>

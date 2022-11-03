@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos</title>
+
+</head>
+<body>
+    <h3><strong>Datos</strong></h3>
+            <ul>  <!-- ol = Ordered List -->
+                <li>Numero de telefono: 2215461937</li>
+                <li>Vivo en: Buenos Aires, Berazategui</li>
+                <li>Mi email es: rodrigoradattitrabajo@hotmail.com</li>
+            </ul>
+    <hr>
+
+    <form class="" action="mailto:rodrigoradattitrabajo@hotmail.com" method="post" enctype="text/plain"> <!-- En index nos envia a la pagina que especifiquemos -->
+        <label for="name">Your Name:</label>
+        <input type="text" name="Your name:" id="name" value=""><br> <!-- Si le ponemos name="" y no el tipo de codificacion enctype nos pasa el texto mal -->
+        <label for="email">Your Email:</label>
+        <input type="email" name="Your email:" id="email" value=""><br>
+        <label for="texto">Your message</label><br>
+        <textarea id="texto" name="Your message:" rows="10" cols="30"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
